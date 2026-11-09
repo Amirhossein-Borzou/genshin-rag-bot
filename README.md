@@ -13,14 +13,7 @@ guides. Never from model memory.
 
 ## How it works
 
-```
-nanoka.cc (game API) ─┐
-Game8 tier lists ─────┤→ scrapers → chunker → SQLite FTS5 (6.1k chunks)
-Game8 build pages ────┤                        ↕
-KeqingMains guides ───┘              hybrid retrieval (FTS5 + sqlite-vec, RRF)
-                                              ↕
-Persian query ── glossary+stem ──► GLM (reasoning ON) ──► answer + provenance footer
-```
+![GIGPT architecture](docs/architecture.png)
 
 ### Retrieval pipeline
 
