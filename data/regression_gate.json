@@ -1,0 +1,22 @@
+{
+ "comment": "Regression gate thresholds (Phase 8). Gate FAILS when a fresh deterministic eval drops any metric below its floor, or scores fewer answerable cases than this baseline. BASELINE = 2026-11-09 18:59 re-baseline on the CURRENT committed pipeline (60c07e4) + current KB (weapon-stat rebuild). The earlier 14:45 report (cov .640) was produced by a transient uncommitted working-tree state that no longer exists; the committed pipeline reproduces 0.551 byte-identically across runs (determinism verified x3, hash-seed-independent). Floors = re-baseline minus 0.03 patch-day tolerance.",
+ "baseline_file": "data/eval_retrieval_20261109_1859.json",
+ "baseline_metrics": {
+  "avg_recall@5": 0.214,
+  "avg_recall@10": 0.469,
+  "avg_MRR": 0.289,
+  "avg_evidence_coverage": 0.551,
+  "avg_precision@5": 0.117,
+  "perfect_coverage_cases": 14,
+  "cases_scored": 36
+ },
+ "floors": {
+  "avg_recall@5": 0.184,
+  "avg_recall@10": 0.439,
+  "avg_MRR": 0.259,
+  "avg_evidence_coverage": 0.521,
+  "avg_precision@5": 0.087
+ },
+ "min_cases_scored": 36,
+ "tolerance": 0.03
+}

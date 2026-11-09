@@ -100,9 +100,24 @@ async def cmd_update(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
                            capture_output=True, text=True, timeout=900)
         b = subprocess.run([sys.executable, os.path.join(HERE, "..", "scripts", "build_kb.py")],
                            capture_output=True, text=True, timeout=300)
-        return (a.stdout + a.stderr + "\n" + b.stdout + b.stderr).strip()[-500:]
+        out = (a.stdout + a.stderr + "\n" + b.stdout + b.stderr).strip()[-500:]
+        # Phase 8 regression gate: reject a rebuild that damages retrieval
+        g = subprocess.run([sys.executable, os.path.join(HERE, "..", "scripts", "regression_gate.py")],
+                           capture_output=True, text=True, timeout=600)
+        out += "\n[gate] " + (g.stdout + g.stderr).strip()[-300:]
+        if g.returncode == 1:
+            try:  # roll back to the pre-rebuild KB
+                os.replace(os.path.join(HERE, "..", "data", "kb.sqlite"),
+                           os.path.join(HERE, "..", "data", "kb.sqlite.regressed"))
+            except OSError:
+                pass
+            return out + "\nGATE-FAIL: rebuild rolled back"
+        return out
     out = await asyncio.to_thread(run)
-    await update.message.reply_text("Refreshing data… ⏳ done ✅")
+    if "GATE-FAIL" in out:
+        await update.message.reply_text("⚠️ Refresh ran but the retrieval regression gate FAILED — KB rolled back. Check data/update.log.")
+    else:
+        await update.message.reply_text("Refreshing data… ⏳ done ✅")
 
 
 async def handle(update: Update, ctx: ContextTypes.DEFAULT_TYPE):

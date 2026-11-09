@@ -186,6 +186,16 @@ Each of these was found by real usage and fixed at the root cause:
 - **Ops:** single systemd unit, auto-restart, unbuffered logging; data refresh is a
   separate oneshot unit (timer currently disabled at owner's discretion) plus an
   owner-only `/update` command; all scrapers resumable and patch-tolerant.
+- **Regression gate (Phase 8):** `scripts/regression_gate.py` re-runs the deterministic
+  retrieval eval after every rebuild and compares against floors in
+  `data/regression_gate.json` (baseline 2026-11-09 18:59 minus a 0.03 patch-day
+  tolerance). `daily_refresh.sh` backs up the old KB first; on gate FAIL the rebuilt
+  KB is rolled back and the refresh exits non-zero. The owner-only `/update` command
+  runs the same gate and reports GATE-FAIL to the chat. Zero LLM tokens end-to-end.
+- **Pipeline diagnostics (Phase 7):** `scripts/diagnose.py "question"` replays every
+  retrieval stage (normalization → glossary → intent → FTS terms with dead-term
+  detection → chunk list with provenance → answerability verdict → context size)
+  deterministically and token-free — the first stop when an answer looks wrong.
 
 ---
 
@@ -199,6 +209,7 @@ Each of these was found by real usage and fixed at the root cause:
 | Two-hop retrieval over one-shot | Build guides name concrete weapons; their stats live elsewhere | Slight latency cost, large grounding win |
 | English answers from Persian questions | LLM's Persian prose quality unstable | Persian users read English names/terms natively anyway |
 | Reasoning ON | Multi-hop comparisons need analysis; user preference | ~3–8× token cost per query vs direct answer |
+| Regression gate on deterministic metrics only | LLM-judge gates are non-deterministic (judge drift) and expensive; retrieval regressions are measurable token-free | Answer-quality drops without retrieval drops need the (expensive) judge — out of scope for the gate |
 
 ---
 
