@@ -344,26 +344,23 @@ def main():
             wtype = {"WEAPON_SWORD_ONE_HAND": "Sword", "WEAPON_CATALYST": "Catalyst",
                      "WEAPON_CLAYMORE": "Claymore", "WEAPON_BOW": "Bow",
                      "WEAPON_POLE": "Polearm"}.get(w.get("weapon_type"), w.get("weapon_type", ""))
-            # base ATK & substat at level 90 from stats_modifier scaling
+            # Base ATK: the index 'atk' field IS the canonical in-game lvl-90 ATK
+            # (verified: Engulfing 608, Beyond the Chrysalis 674 — matches game UI)
+            atk_max = meta.get("atk")
+            # Substat at lvl90: stats_modifier.<prop>.base x levels["90"] gives the exact game value
+            # (verified: ER 55.1% for Engulfing, CD 44.1% for Beyond the Chrysalis)
             sm = w.get("stats_modifier") or {}
-            atk_base = sm.get("atk", {}).get("base")
-            sub = w.get("weapon_prop") or []
             sub_txt = ""
-            for p in sub:
-                pt = p.get("prop_type", "")
-                if pt == "FIGHT_PROP_BASE_ATTACK":
+            for prop_key, prop_data in sm.items():
+                if prop_key == "atk" or not isinstance(prop_data, dict):
                     continue
-                label = PROP_NAMES.get(pt, pt)
-                val = p.get("init_value", 0)
-                val = f"{val*100:.1f}%" if val < 1.5 else f"{val:.0f}"
-                sub_txt = f"{label} {val}"
-            atk_max = None
-            if atk_base and sm.get("atk", {}).get("levels"):
-                lv = sm["atk"]["levels"]
-                # level 90 = max real level (100 is a data-table artifact)
-                real = {k: v for k, v in lv.items() if float(k) <= 90}
-                max_key = max(real, key=lambda x: float(x)) if real else max(lv, key=lambda x: float(x))
-                atk_max = atk_base * float(lv[max_key])
+                label = PROP_NAMES.get(prop_key.upper(), prop_key)
+                try:
+                    val = prop_data.get("base", 0) * float(prop_data.get("levels", {}).get("90", prop_data.get("base", 0)))
+                except Exception:
+                    val = prop_data.get("base", 0)
+                if val:
+                    sub_txt = f"{label} {val*100:.1f}%" if val < 1.5 else f"{label} {val:.0f}"
             ref = w.get("refinement") or {}
             ref_parts = []
             for r in ["1", "5"]:

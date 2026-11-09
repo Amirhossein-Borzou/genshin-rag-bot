@@ -114,6 +114,15 @@ async def handle(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("⚠️ Rate limit: max 15 questions/hour. Please wait a bit.")
         log_query(uid, q, kind="rate_limited")
         return
+    # chitchat gate (zero tokens): non-game chatter never reaches the LLM
+    try:
+        import chitchat
+        if chitchat.is_chitchat(q):
+            await update.message.reply_text(chitchat.CHITCHAT_REPLY)
+            log_query(uid, q, kind="chitchat", answer_len=len(chitchat.CHITCHAT_REPLY))
+            return
+    except Exception:
+        pass  # gate must never break answering
     await ctx.bot.send_chat_action(chat_id=update.effective_chat.id, action=ChatAction.TYPING)
     t0 = _time.time()
     try:

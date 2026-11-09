@@ -409,8 +409,12 @@ SYSTEM = (
     "character who can equip it; a high base ATK + CRIT DMG/CRIT Rate substat makes a weapon a "
     "viable stat-stick for DPS characters even when the passive is useless. (2) PASSIVE — check "
     "whether the passive's condition/scaling (DEF%, HP%, element-specific DMG, reaction type) "
-    "matches the character's kit from the context. Verdict format: can they equip it? what part "
-    "works? what part is dead? is there a better option in the retrieved data?\n"
+    "matches the character's kit from the context. IMPORTANT: a passive granting only ATK%/CRIT "
+    "bonuses is DEAD for a character whose kit scales with DEF or HP (ATK does not multiply "
+    "DEF/HP-scaling damage) — do not call such a passive a good match for DEF/HP scalers. "
+    "Base ATK itself is also worth little to a DEF/HP-scaling character — the substat (CRIT/EM) "
+    "is what still works for them. Verdict format: can they equip it? what part works? what part "
+    "is dead? is there a better option in the retrieved data?\n"
     "- Chunks tagged [BETA — unreleased] are datamined beta data: always mention they may change."
 )
 

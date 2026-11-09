@@ -163,6 +163,7 @@ Each of these was found by real usage and fixed at the root cause:
 | One character hogged all context slots | bm25 rank imbalance | Round-robin interleaving |
 | "Signature weapon" questions lacked stats | Hop expansion returned raw index row (no passive) | Prefer full-weapon chunk by `body LIKE '%Refinement:%'` |
 | Engine errors during eval | Test runner didn't pass the API key | Fixed harness (not the engine) |
+| Chatty messages burned full RAG+LLM cycles ("how reliable are the answers so far?") | No filter before retrieval; FTS matched junk chunks and GLM ran anyway | Zero-token chitchat gate (`bot/chitchat.py`): two-strike rule — game signal (game words / glossary term / known entity name) must be present, else a short message with chat/meta markers gets a canned reply without touching the LLM |
 
 ---
 
@@ -173,7 +174,11 @@ Each of these was found by real usage and fixed at the root cause:
   are generic (no stack-trace/key leakage); outbound-only polling (no listening ports);
   LLM output rendered as plain text (no HTML injection surface).
 - **Abuse control:** per-user rate limit (15 queries/hour, configurable) protects the
-  upstream LLM quota from scripted spam; `/start` documents the limit.
+  upstream LLM quota from scripted spam; `/start` documents the limit. A zero-token
+  chitchat gate (`bot/chitchat.py`) short-circuits non-game chatter before retrieval —
+  a game-signal check (game vocabulary, Persian glossary term, or known entity name)
+  must pass, otherwise chat/meta messages get a canned reply and never reach the LLM;
+  ambiguous messages fall through to the normal RAG path (fail-open).
 - **Observability:** every query is logged to `data/query_log.jsonl` — timestamp,
   pseudonymous SHA-256 user hash (never raw IDs), question, outcome kind, latency,
   retrieved sources. `scripts/stats_querylog.py` summarizes volume, unique users, error
