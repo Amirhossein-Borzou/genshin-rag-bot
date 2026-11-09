@@ -1,0 +1,33 @@
+# --- secrets: NEVER commit ---
+bot.env
+*.env
+!.env.example
+.env
+
+# --- data: rebuilt by scripts, too big for git ---
+data/kb.sqlite
+data/kits/
+data/weapons/
+data/game8/
+data/kqm/
+data/knowledge/
+data/character_index.json
+data/weapon_live.json
+data/weapon_index.json
+data/artifact_live.json
+data/artifact_index.json
+data/beta_new_ids.json
+data/beta_index.json
+data/manifest.json
+data/update.log
+data/query_log.jsonl
+data/test_results.jsonl
+data/eval_retrieval_*.json
+data/data_quality.json
+data/_curation_wip.json
+
+# --- python ---
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/

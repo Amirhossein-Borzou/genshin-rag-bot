@@ -1,0 +1,1726 @@
+[
+ {
+  "id": "q1",
+  "category": "exact_fact_retrieval",
+  "question": "What is the best Artifact set for a Main DPS Hu Tao?",
+  "reference_answer": "4pc Crimson Witch of Flames (traditional/strong) or 4pc Shimenawa's Reminiscence (competitive); depends on reactions/charged attacks/energy",
+  "retrieved_chunk_ids": [
+   "g8:char:Hu Tao",
+   "g8:build:Hu Tao C0:artifacts",
+   "g8:build:Hu Tao C6:artifacts",
+   "g8:build:Hu Tao Exploration Rank:artifacts",
+   "kqm:hu-tao:15",
+   "g8:build:Hu Tao:artifacts",
+   "kqm:hu-tao:0",
+   "char:10000046:passive:1",
+   "kqm:hu-tao:14"
+  ],
+  "retrieved_names": [
+   "Hu Tao",
+   "Hu Tao C0",
+   "Hu Tao C6",
+   "Hu Tao Exploration Rank",
+   "Hu Tao Guide: Butterfly's Embrace"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "g8:build:Hu Tao:artifacts",
+   "kqm:hu-tao:15"
+  ],
+  "expected_answer_facts": [
+   "4pc Crimson Witch of Flames (traditional/strong) or 4pc Shimenawa's Reminiscence (competitive); depends on reactions/charged attacks/energy"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q2",
+  "category": "exact_fact_retrieval",
+  "question": "Which main stats should I use on Hu Tao's Sands, Goblet, and Circlet?",
+  "reference_answer": "HP% or EM Sands, Pyro DMG Goblet, CRIT Rate/DMG Circlet; Sands depends on team/weapon/EM",
+  "retrieved_chunk_ids": [
+   "kqm:hu-tao:11",
+   "g8:build:Hu Tao:artifacts",
+   "g8:build:Hu Tao C0:artifacts",
+   "g8:build:Hu Tao C6:artifacts",
+   "g8:weapon:Staff of the Scarlet Sands",
+   "g8:build:Fischl:artifacts",
+   "g8:build:Fischl C0:artifacts",
+   "g8:build:Fischl C6:artifacts",
+   "g8:build:Fischl Exploration Rank:artifacts",
+   "kqm:yelan:11",
+   "g8:build:Sayu:artifacts",
+   "g8:build:Charlotte:artifacts",
+   "g8:build:Sayu C0:artifacts",
+   "kqm:hu-tao:13",
+   "weapon:full:13511",
+   "kqm:hu-tao:12",
+   "weapon:13511"
+  ],
+  "retrieved_names": [
+   "Hu Tao Guide: Butterfly's Embrace",
+   "Hu Tao",
+   "Hu Tao C0",
+   "Hu Tao C6",
+   "Staff of the Scarlet Sands",
+   "Fischl",
+   "Fischl C0",
+   "Fischl C6",
+   "Fischl Exploration Rank",
+   "Yelan Guide: Things Are About to Get Dicey",
+   "Sayu",
+   "Charlotte",
+   "Sayu C0"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "kqm:hu-tao:12",
+   "kqm:hu-tao:11",
+   "kn:general_building:1"
+  ],
+  "expected_answer_facts": [
+   "HP% or EM Sands, Pyro DMG Goblet, CRIT Rate/DMG Circlet; Sands depends on team/weapon/EM"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q3",
+  "category": "exact_fact_retrieval",
+  "question": "Is Staff of Homa better than Dragon's Bane for Hu Tao?",
+  "reference_answer": "Homa generally strongest (CRIT DMG, HP bonus, ATK scaling); Dragon's Bane competitive in Vaporize (EM + dmg vs Hydro/Pyro-affected)",
+  "retrieved_chunk_ids": [
+   "g8:weapon:Staff of Homa",
+   "g8:weapon:Staff of the Scarlet Sands",
+   "weapon:13434",
+   "weapon:13401",
+   "g8:weapon:Thrilling Tales of Dragon Slayers",
+   "kqm:hu-tao:2",
+   "char:10000046:passive:1",
+   "kqm:rosaria:22",
+   "weapon:13501",
+   "weapon:13511",
+   "weapon:full:13401",
+   "weapon:14302",
+   "kqm:hu-tao:11",
+   "g8:char:Hu Tao",
+   "kqm:rosaria:12",
+   "weapon:full:13501",
+   "weapon:full:14302",
+   "kqm:hu-tao:15"
+  ],
+  "retrieved_names": [
+   "Staff of Homa",
+   "Staff of the Scarlet Sands",
+   "Sacrificer's Staff",
+   "Dragon's Bane",
+   "Thrilling Tales of Dragon Slayers",
+   "Hu Tao Guide: Butterfly's Embrace",
+   "Hu Tao",
+   "Rosaria Guide: Thorny Benevolence"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "weapon:full:13501",
+   "weapon:full:13401",
+   "kqm:hu-tao:2"
+  ],
+  "expected_answer_facts": [
+   "Homa generally strongest (CRIT DMG, HP bonus, ATK scaling); Dragon's Bane competitive in Vaporize (EM + dmg vs Hydro/Pyro-affected)"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q4",
+  "category": "exact_fact_retrieval",
+  "question": "What is the recommended Artifact set for a support Bennett?",
+  "reference_answer": "4pc Noblesse Oblige: boosts Burst dmg + team ATK buff; his buff scales with Base ATK",
+  "retrieved_chunk_ids": [
+   "char:10000032:overview",
+   "kqm:bennett:7",
+   "g8:build:Shenhe:artifacts",
+   "g8:build:Shenhe C0:artifacts",
+   "g8:build:Shenhe C6:artifacts",
+   "g8:build:Shenhe Exploration Rank:artifacts",
+   "g8:build:Odette:artifacts",
+   "g8:build:Odette C0:artifacts",
+   "g8:build:Odette C6:artifacts",
+   "g8:build:Odette Exploration Rank:artifacts",
+   "char:10000032:skill:0",
+   "kqm:bennett:0",
+   "char:10000032:skill:1",
+   "kqm:bennett:5",
+   "char:10000032:skill:2",
+   "char:10000032:passive:0",
+   "char:10000032:passive:1",
+   "g8:char:Bennett"
+  ],
+  "retrieved_names": [
+   "Bennett",
+   "Bennett Guide: Trial by Fire",
+   "Shenhe",
+   "Shenhe C0",
+   "Shenhe C6",
+   "Shenhe Exploration Rank",
+   "Odette",
+   "Odette C0",
+   "Odette C6",
+   "Odette Exploration Rank"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "kqm:bennett:7",
+   "kqm:bennett:9",
+   "char:10000025:skill:2"
+  ],
+  "expected_answer_facts": [
+   "4pc Noblesse Oblige: boosts Burst dmg + team ATK buff; his buff scales with Base ATK"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q5",
+  "category": "exact_fact_retrieval",
+  "question": "Which stats should I prioritize when building a shield-focused Zhongli?",
+  "reference_answer": "HP% primary (Sands/Goblet/Circlet HP%); shield strength also depends on talent level",
+  "retrieved_chunk_ids": [
+   "char:10000030:overview",
+   "kn:general_building:0",
+   "kqm:zhongli:10",
+   "kqm:noelle:9",
+   "kqm:xiao:34",
+   "kqm:ganyu:57",
+   "g8:build:Kachina:artifacts",
+   "char:10000030:skill:0",
+   "kn:general_building:1",
+   "kqm:zhongli:8",
+   "char:10000030:skill:1",
+   "kqm:zhongli:9",
+   "char:10000030:skill:2",
+   "char:10000030:passive:0",
+   "char:10000030:passive:1",
+   "char:10000030:const:1",
+   "char:10000030:const:5"
+  ],
+  "retrieved_names": [
+   "Zhongli",
+   "General Building Knowledge",
+   "Zhongli Guide: 岩王帝君",
+   "Noelle Guide: Time to Clean Up",
+   "Xiao Guide:  Adeptal Guide to Conquering Xiao",
+   "Ganyu Guide: Plenilune Gaze",
+   "Kachina"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "g8:build:Zhongli:artifacts",
+   "g8:build:Zhongli C0:artifacts",
+   "g8:build:Zhongli C6:artifacts",
+   "char:10000037:skill:1"
+  ],
+  "expected_answer_facts": [
+   "HP% primary (Sands/Goblet/Circlet HP%); shield strength also depends on talent level"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q6",
+  "category": "exact_fact_retrieval",
+  "question": "What is the best Artifact set for a reaction-focused Kuki Shinobu in Hyperbloom?",
+  "reference_answer": "4pc Flower of Paradise Lost or 4pc Gilded Dreams; prioritize EM (Hyperbloom scales with level+EM)",
+  "retrieved_chunk_ids": [
+   "g8:char:Shinobu",
+   "char:10000065:talent_weekly",
+   "kqm:candace:31",
+   "kqm:collei:23",
+   "kqm:kaveh:25",
+   "kqm:kazuha:41",
+   "kqm:shinobu:0",
+   "char:10000065:passive:0",
+   "kqm:candace:30",
+   "char:10000065:const:0",
+   "char:10000065:const:1",
+   "char:10000065:passive:2",
+   "char:10000065:const:2"
+  ],
+  "retrieved_names": [
+   "Shinobu",
+   "Kuki Shinobu",
+   "Candace Guide: Heterochromatic Guardian",
+   "Collei Guide: Sprout of Rebirth",
+   "Kaveh Guide | Empyrean Reflection",
+   "Kazuha Guide: Scarlet Leaves Pursue Wild Waves",
+   "Shinobu Guide"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "g8:build:Shinobu:artifacts",
+   "g8:build:Shinobu C0:artifacts"
+  ],
+  "expected_answer_facts": [
+   "4pc Flower of Paradise Lost or 4pc Gilded Dreams; prioritize EM (Hyperbloom scales with level+EM)"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q7",
+  "category": "exact_fact_retrieval",
+  "question": "Should I build ATK or Elemental Mastery on a Hyperbloom Raiden Shogun?",
+  "reference_answer": "EM preferred for Hyperbloom trigger; damage based on level+EM not ATK/CRIT",
+  "retrieved_chunk_ids": [
+   "g8:char:Raiden",
+   "kqm:raiden:24",
+   "g8:build:Raiden C0:artifacts",
+   "g8:build:Raiden C6:artifacts",
+   "g8:build:Raiden Exploration Rank:artifacts",
+   "char:10000052:const:3",
+   "kqm:candace:31",
+   "g8:build:Raiden:artifacts",
+   "char:10000052:passive:2",
+   "kqm:candace:30",
+   "char:10000052:talent_weekly",
+   "char:10000052:const:4",
+   "char:10000052:passive:0",
+   "char:10000052:const:5",
+   "char:10000052:skill:2"
+  ],
+  "retrieved_names": [
+   "Raiden",
+   "Raiden Guide: Eternal Transience",
+   "Raiden C0",
+   "Raiden C6",
+   "Raiden Exploration Rank",
+   "Raiden Shogun",
+   "Candace Guide: Heterochromatic Guardian"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "g8:build:Raiden:artifacts",
+   "g8:artifact:Emblem of Severed Fate",
+   "kn:general_building:1"
+  ],
+  "expected_answer_facts": [
+   "EM preferred for Hyperbloom trigger; damage based on level+EM not ATK/CRIT"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q8",
+  "category": "exact_fact_retrieval",
+  "question": "What is the recommended weapon and Artifact set for a support Xingqiu?",
+  "reference_answer": "Sacrificial Sword (ER + skill usage); 4pc Emblem of Severed Fate (Burst dmg from ER)",
+  "retrieved_chunk_ids": [
+   "char:10000025:overview",
+   "kqm:xingqiu:14",
+   "g8:build:Xingqiu C0:artifacts",
+   "g8:build:Xingqiu C6:artifacts",
+   "g8:build:Xingqiu Exploration Rank:artifacts",
+   "g8:build:Shenhe:artifacts",
+   "g8:build:Shenhe C0:artifacts",
+   "g8:build:Shenhe C6:artifacts",
+   "g8:build:Shenhe Exploration Rank:artifacts",
+   "g8:build:Candace:artifacts",
+   "g8:build:Candace C0:artifacts",
+   "g8:build:Candace C6:artifacts",
+   "char:10000025:skill:0",
+   "kqm:xingqiu:21",
+   "char:10000025:skill:1",
+   "char:10000025:skill:2",
+   "char:10000025:passive:0",
+   "char:10000025:passive:1"
+  ],
+  "retrieved_names": [
+   "Xingqiu",
+   "Xingqiu Guide: A Moment of Solitude",
+   "Xingqiu C0",
+   "Xingqiu C6",
+   "Xingqiu Exploration Rank",
+   "Shenhe",
+   "Shenhe C0",
+   "Shenhe C6",
+   "Shenhe Exploration Rank",
+   "Candace",
+   "Candace C0",
+   "Candace C6"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "g8:build:Xingqiu:artifacts",
+   "g8:build:Xingqiu C0:artifacts",
+   "g8:build:Xingqiu C6:artifacts",
+   "weapon:full:11431",
+   "g8:artifact:Emblem of Severed Fate"
+  ],
+  "expected_answer_facts": [
+   "Sacrificial Sword (ER + skill usage); 4pc Emblem of Severed Fate (Burst dmg from ER)"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q9",
+  "category": "exact_fact_retrieval",
+  "question": "Which stats should I prioritize when building Neuvillette?",
+  "reference_answer": "HP%, Hydro DMG, CRIT; Charged Attack scales with HP — ATK not useful",
+  "retrieved_chunk_ids": [
+   "char:10000087:overview",
+   "kn:general_building:0",
+   "kqm:neuvillette:21",
+   "g8:build:Kachina:artifacts",
+   "g8:build:Kachina C0:artifacts",
+   "g8:build:Kachina C6:artifacts",
+   "g8:build:Kachina Exploration Rank:artifacts",
+   "g8:build:Iansan:artifacts",
+   "g8:build:Iansan C0:artifacts",
+   "char:10000087:skill:0",
+   "kn:general_building:1",
+   "kqm:neuvillette:46",
+   "char:10000087:skill:1",
+   "kqm:neuvillette:58",
+   "char:10000087:skill:2",
+   "kqm:neuvillette:15",
+   "char:10000087:passive:0",
+   "kqm:neuvillette:17"
+  ],
+  "retrieved_names": [
+   "Neuvillette",
+   "General Building Knowledge",
+   "Neuvillette Guide: Judgment of the Tides",
+   "Kachina",
+   "Kachina C0",
+   "Kachina C6",
+   "Kachina Exploration Rank",
+   "Iansan",
+   "Iansan C0"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "kqm:neuvillette:20",
+   "char:10000087:stats"
+  ],
+  "expected_answer_facts": [
+   "HP%, Hydro DMG, CRIT; Charged Attack scales with HP — ATK not useful"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q10",
+  "category": "exact_fact_retrieval",
+  "question": "What is the recommended Artifact set for a Freeze support Shenhe?",
+  "reference_answer": "4pc Noblesse Oblige strong; her buffing scales with ATK; ATK% mains + ER",
+  "retrieved_chunk_ids": [
+   "char:10000063:overview",
+   "g8:build:Shenhe C0:artifacts",
+   "g8:build:Shenhe C6:artifacts",
+   "g8:build:Shenhe Exploration Rank:artifacts",
+   "kqm:shenhe:0",
+   "kqm:ayaka:13",
+   "char:10000063:skill:0",
+   "kqm:shenhe:5",
+   "char:10000063:skill:1",
+   "kqm:shenhe:13",
+   "char:10000063:skill:2",
+   "char:10000063:passive:0",
+   "char:10000063:passive:1",
+   "g8:build:Shenhe:artifacts"
+  ],
+  "retrieved_names": [
+   "Shenhe",
+   "Shenhe C0",
+   "Shenhe C6",
+   "Shenhe Exploration Rank",
+   "Shenhe Guide: Divine Damsel of Devastation",
+   "Ayaka Guide: 優雅な踊り"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "g8:build:Shenhe:artifacts",
+   "g8:build:Shenhe C0:artifacts",
+   "g8:build:Shenhe C6:artifacts",
+   "kqm:shenhe:10"
+  ],
+  "expected_answer_facts": [
+   "4pc Noblesse Oblige strong; her buffing scales with ATK; ATK% mains + ER"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q11",
+  "category": "team_synergy",
+  "question": "Is Durin a good teammate for Hu Tao?",
+  "reference_answer": "Needs kit-based evaluation: Pyro application/off-field/buffs without breaking Vaporize; should NOT assume Pyro+Pyro = synergy",
+  "retrieved_chunk_ids": [
+   "char:10000123:overview",
+   "kqm:durin:0",
+   "g8:char:Hu Tao",
+   "kqm:hu-tao:7",
+   "kqm:yunjin:23",
+   "kqm:geo-traveler:33",
+   "kqm:furina:24",
+   "char:10000123:skill:0",
+   "char:10000046:passive:1",
+   "kqm:hu-tao:24",
+   "kqm:yunjin:21",
+   "char:10000123:skill:1",
+   "char:10000046:talent_weekly",
+   "kqm:hu-tao:17",
+   "char:10000123:skill:2",
+   "char:10000046:const:0",
+   "char:10000123:passive:0",
+   "char:10000046:const:3"
+  ],
+  "retrieved_names": [
+   "Durin",
+   "Durin Guide",
+   "Hu Tao",
+   "Hu Tao Guide: Butterfly's Embrace",
+   "Yun Jin Guide: The Stage Lucida",
+   "Geo Traveler Guide: Meteorite Impact",
+   "Furina Guide: Solitary Soliloquy"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "char:10000123:overview",
+   "char:10000123:skill:0"
+  ],
+  "expected_answer_facts": [
+   "Needs kit-based evaluation: Pyro application/off-field/buffs without breaking Vaporize; should NOT assume Pyro+Pyro = synergy"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q12",
+  "category": "team_synergy",
+  "question": "Is Xingqiu or Yelan better for Hu Tao?",
+  "reference_answer": "Both excellent: Xingqiu = Hydro application + defensive; Yelan = off-field dmg + dmg bonus; depends on needs",
+  "retrieved_chunk_ids": [
+   "char:10000060:overview",
+   "char:10000025:overview",
+   "kqm:xingqiu:52",
+   "kqm:yelan:26",
+   "kqm:hu-tao:17",
+   "kqm:layla:31",
+   "kqm:xiangling:14",
+   "char:10000060:skill:0",
+   "char:10000025:skill:0",
+   "kqm:xingqiu:40",
+   "kqm:yelan:25",
+   "kqm:hu-tao:22",
+   "char:10000060:skill:1",
+   "char:10000025:skill:1",
+   "kqm:xingqiu:53",
+   "kqm:yelan:17",
+   "kqm:hu-tao:1",
+   "char:10000060:skill:2"
+  ],
+  "retrieved_names": [
+   "Yelan",
+   "Xingqiu",
+   "Xingqiu Guide: A Moment of Solitude",
+   "Yelan Guide: Things Are About to Get Dicey",
+   "Hu Tao Guide: Butterfly's Embrace",
+   "Layla Guide: The Stars' Blessing",
+   "Xiangling Guide: Cooking with Fire"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "char:10000042:overview",
+   "char:10000042:skill:2",
+   "char:10000060:overview",
+   "char:10000060:skill:2",
+   "char:10000060:stats"
+  ],
+  "expected_answer_facts": [
+   "Both excellent: Xingqiu = Hydro application + defensive; Yelan = off-field dmg + dmg bonus; depends on needs"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q13",
+  "category": "team_synergy",
+  "question": "Can Furina work well with Hu Tao without a dedicated healer?",
+  "reference_answer": "Can work, but Fanfare/HP-drain means team-wide healing helps; Hu Tao self-heal may not suffice",
+  "retrieved_chunk_ids": [
+   "char:10000089:overview",
+   "kqm:furina:24",
+   "g8:char:Hu Tao",
+   "kqm:hu-tao:8",
+   "kqm:geo-traveler:33",
+   "kqm:thoma:10",
+   "kqm:xingqiu:40",
+   "kqm:baizhu:18",
+   "kqm:xiangling:4",
+   "char:10000089:skill:0",
+   "kqm:furina:23",
+   "char:10000046:passive:1",
+   "kqm:hu-tao:1",
+   "char:10000089:skill:1",
+   "kqm:furina:18",
+   "char:10000046:talent_weekly",
+   "char:10000089:skill:2",
+   "kqm:furina:3"
+  ],
+  "retrieved_names": [
+   "Furina",
+   "Furina Guide: Solitary Soliloquy",
+   "Hu Tao",
+   "Hu Tao Guide: Butterfly's Embrace",
+   "Geo Traveler Guide: Meteorite Impact",
+   "Thoma Guide: Crimson Armor of Loyalty",
+   "Xingqiu Guide: A Moment of Solitude",
+   "Baizhu Guide: Beyond Mortality",
+   "Xiangling Guide: Cooking with Fire"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "char:10000086:skill:1",
+   "char:10000086:overview",
+   "char:10000046:passive:0"
+  ],
+  "expected_answer_facts": [
+   "Can work, but Fanfare/HP-drain means team-wide healing helps; Hu Tao self-heal may not suffice"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q14",
+  "category": "team_synergy",
+  "question": "Why is Kazuha considered a strong support for elemental DPS characters?",
+  "reference_answer": "CC + Elemental DMG Bonus passive + 4pc VV RES shred; depends on swirling the element",
+  "retrieved_chunk_ids": [
+   "g8:char:Kazuha",
+   "kqm:kazuha:47",
+   "char:10000047:passive:0",
+   "kqm:yunjin:1",
+   "kqm:nilou:19",
+   "kqm:bennett:0",
+   "kqm:zhongli:3",
+   "kqm:xingqiu:61",
+   "kqm:kazuha:50",
+   "char:10000047:const:1",
+   "kqm:kazuha:55",
+   "kqm:kazuha:0",
+   "kqm:kazuha:62"
+  ],
+  "retrieved_names": [
+   "Kazuha",
+   "Kazuha Guide: Scarlet Leaves Pursue Wild Waves",
+   "Kaedehara Kazuha",
+   "Yun Jin Guide: The Stage Lucida",
+   "Nilou Guide: Dance of Lotuslight",
+   "Bennett Guide: Trial by Fire",
+   "Zhongli Guide: 岩王帝君",
+   "Xingqiu Guide: A Moment of Solitude"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "g8:artifact:Viridescent Venerer",
+   "char:10000047:passive:1",
+   "char:10000047:overview"
+  ],
+  "expected_answer_facts": [
+   "CC + Elemental DMG Bonus passive + 4pc VV RES shred; depends on swirling the element"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q15",
+  "category": "team_synergy",
+  "question": "Is Nahida a good teammate for Alhaitham?",
+  "reference_answer": "Yes: Dendro application, Dendro DMG support, EM buffs for Spread teams",
+  "retrieved_chunk_ids": [
+   "char:10000078:overview",
+   "char:10000073:overview",
+   "kqm:nahida:13",
+   "kqm:alhaitham:0",
+   "kqm:furina:28",
+   "kqm:nilou:17",
+   "kqm:fischl:43",
+   "kqm:yaoyao:21",
+   "kqm:baizhu:26",
+   "char:10000078:skill:0",
+   "char:10000073:skill:0",
+   "kqm:nahida:18",
+   "kqm:fischl:39",
+   "char:10000078:skill:1",
+   "char:10000073:skill:1",
+   "kqm:nahida:15",
+   "char:10000078:skill:2",
+   "char:10000073:skill:2"
+  ],
+  "retrieved_names": [
+   "Alhaitham",
+   "Nahida",
+   "Nahida Guide: For All Knowledge, A Dream",
+   "Alhaitham Guide",
+   "Furina Guide: Solitary Soliloquy",
+   "Nilou Guide: Dance of Lotuslight",
+   "Fischl Guide: Sovereign of the Immernachtreich",
+   "Yaoyao Guide: Burgeoning Grace",
+   "Baizhu Guide: Beyond Mortality"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "char:10000078:overview",
+   "char:10000078:skill:1",
+   "char:10000083:overview"
+  ],
+  "expected_answer_facts": [
+   "Yes: Dendro application, Dendro DMG support, EM buffs for Spread teams"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q16",
+  "category": "team_synergy",
+  "question": "Can Raiden Shogun and Xiangling work together in the same team?",
+  "reference_answer": "Yes — Raiden National (with Xingqiu + Bennett): energy support + damage + reactions",
+  "retrieved_chunk_ids": [
+   "char:10000023:overview",
+   "g8:char:Raiden",
+   "char:10000052:passive:2",
+   "kqm:xiangling:22",
+   "kqm:xingqiu:44",
+   "char:10000023:skill:0",
+   "char:10000052:talent_weekly",
+   "kqm:xiangling:13",
+   "char:10000023:skill:1",
+   "char:10000052:const:4",
+   "kqm:xiangling:14",
+   "char:10000023:skill:2",
+   "char:10000052:const:1",
+   "kqm:xiangling:6",
+   "char:10000023:passive:0",
+   "char:10000052:passive:1",
+   "kqm:xiangling:17",
+   "char:10000023:passive:1"
+  ],
+  "retrieved_names": [
+   "Xiangling",
+   "Raiden",
+   "Raiden Shogun",
+   "Xiangling Guide: Cooking with Fire",
+   "Xingqiu Guide: A Moment of Solitude"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "char:10000052:overview",
+   "char:10000023:overview",
+   "char:10000023:skill:1"
+  ],
+  "expected_answer_facts": [
+   "Yes — Raiden National (with Xingqiu + Bennett): energy support + damage + reactions"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q17",
+  "category": "team_synergy",
+  "question": "Is Zhongli a good support for Xiao?",
+  "reference_answer": "Yes: strong shield, interruption resistance, RES shred — great for plunge DPS",
+  "retrieved_chunk_ids": [
+   "char:10000026:overview",
+   "char:10000030:overview",
+   "kqm:zhongli:7",
+   "kqm:xiao:31",
+   "kqm:anemo-traveler:22",
+   "kqm:geo-traveler:32",
+   "kqm:razor:64",
+   "char:10000026:skill:0",
+   "char:10000030:skill:0",
+   "kqm:zhongli:0",
+   "kqm:xiao:30",
+   "char:10000026:skill:1",
+   "char:10000030:skill:1",
+   "kqm:zhongli:2",
+   "kqm:xiao:17",
+   "char:10000026:skill:2",
+   "char:10000030:skill:2",
+   "kqm:zhongli:15"
+  ],
+  "retrieved_names": [
+   "Xiao",
+   "Zhongli",
+   "Zhongli Guide: 岩王帝君",
+   "Xiao Guide:  Adeptal Guide to Conquering Xiao",
+   "Anemo Traveler Guide: Vortex Stellaris",
+   "Geo Traveler Guide: Meteorite Impact",
+   "Razor Guide: The Legend of Wolvendom"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "char:10000037:skill:1",
+   "kqm:xiao:12"
+  ],
+  "expected_answer_facts": [
+   "Yes: strong shield, interruption resistance, RES shred — great for plunge DPS"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q18",
+  "category": "team_synergy",
+  "question": "Why is Fischl considered a strong off-field Electro DPS?",
+  "reference_answer": "Oz consistent off-field Electro; A4 adds damage on Electro reactions; great in Aggravate",
+  "retrieved_chunk_ids": [
+   "char:10000031:overview",
+   "kqm:fischl:0",
+   "kqm:albedo:10",
+   "kqm:electro-traveler:0",
+   "g8:char:Traveler (Electro)",
+   "kqm:tighnari:2",
+   "kqm:ayato:21",
+   "kqm:nahida:14",
+   "char:10000031:skill:0",
+   "kqm:fischl:1",
+   "kqm:albedo:11",
+   "kqm:electro-traveler:13",
+   "char:10000031:skill:1",
+   "kqm:fischl:28",
+   "kqm:albedo:9",
+   "kqm:electro-traveler:10",
+   "char:10000031:skill:2",
+   "kqm:fischl:4"
+  ],
+  "retrieved_names": [
+   "Fischl",
+   "Fischl Guide: Sovereign of the Immernachtreich",
+   "Albedo Guide: In-the-Field Research",
+   "Electro Traveler Guide: Violet Vehemence",
+   "Traveler (Electro)",
+   "Tighnari: Verdant Strider",
+   "Ayato Guide: The Boba Lord",
+   "Nahida Guide: For All Knowledge, A Dream"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "char:10000032:passive:2",
+   "char:10000032:skill:1"
+  ],
+  "expected_answer_facts": [
+   "Oz consistent off-field Electro; A4 adds damage on Electro reactions; great in Aggravate"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q19",
+  "category": "team_synergy",
+  "question": "Is Bennett a good teammate for Neuvillette?",
+  "reference_answer": "Generally no: Neuvillette scales with HP, Bennett's ATK buff doesn't help his damage; healing still useful",
+  "retrieved_chunk_ids": [
+   "char:10000087:overview",
+   "char:10000032:overview",
+   "kqm:neuvillette:54",
+   "kqm:baizhu:32",
+   "char:10000087:skill:0",
+   "char:10000032:skill:0",
+   "kqm:neuvillette:31",
+   "char:10000087:skill:1",
+   "char:10000032:skill:1",
+   "kqm:neuvillette:0",
+   "char:10000087:skill:2",
+   "char:10000032:skill:2",
+   "kqm:neuvillette:57",
+   "char:10000087:passive:0",
+   "char:10000032:passive:0",
+   "kqm:neuvillette:61",
+   "char:10000087:passive:1",
+   "char:10000032:passive:1"
+  ],
+  "retrieved_names": [
+   "Neuvillette",
+   "Bennett",
+   "Neuvillette Guide: Judgment of the Tides",
+   "Baizhu Guide: Beyond Mortality"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "char:10000087:stats",
+   "char:10000025:skill:1"
+  ],
+  "expected_answer_facts": [
+   "Generally no: Neuvillette scales with HP, Bennett's ATK buff doesn't help his damage; healing still useful"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q20",
+  "category": "team_synergy",
+  "question": "Why is a Dendro character necessary in a standard Hyperbloom team?",
+  "reference_answer": "Dendro+Hydro = Bloom cores; Electro on cores = Hyperbloom; without Dendro no cores",
+  "retrieved_chunk_ids": [
+   "g8:build:Traveler (Dendro):artifacts",
+   "g8:build:Traveler (Dendro) C0:artifacts",
+   "g8:build:Traveler (Dendro) C6:artifacts",
+   "g8:build:Traveler (Dendro) Exploration Rank:artifacts",
+   "kqm:dendro-traveler:0",
+   "kqm:beidou:10",
+   "kqm:neuvillette:40",
+   "kqm:lisa-3:12",
+   "kqm:dehya:2",
+   "kqm:gorou:3",
+   "kqm:baizhu:16",
+   "g8:char:Traveler (Dendro)",
+   "kqm:neuvillette:43",
+   "kqm:lisa-3:13"
+  ],
+  "retrieved_names": [
+   "Traveler (Dendro)",
+   "Traveler (Dendro) C0",
+   "Traveler (Dendro) C6",
+   "Traveler (Dendro) Exploration Rank",
+   "Dendro Traveler Guide",
+   "Beidou Guide: Tales from the Sea",
+   "Neuvillette Guide: Judgment of the Tides",
+   "Lisa Guide: Page 3",
+   "Dehya Guide: The Roaring Flame-Mane",
+   "Gorou Guide: Canine Warrior",
+   "Baizhu Guide: Beyond Mortality"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "char:10000078:overview",
+   "kqm:kaveh:21"
+  ],
+  "expected_answer_facts": [
+   "Dendro+Hydro = Bloom cores; Electro on cores = Hyperbloom; without Dendro no cores"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q21",
+  "category": "comparative_reasoning",
+  "question": "Who is a better Hyperbloom trigger, Kuki Shinobu or Fischl?",
+  "reference_answer": "Kuki: skill hits cores consistently + healing; Fischl targeting less reliable",
+  "retrieved_chunk_ids": [
+   "char:10000031:overview",
+   "g8:char:Shinobu",
+   "char:10000065:const:5",
+   "kqm:fischl:45",
+   "kqm:candace:30",
+   "kqm:neuvillette:45",
+   "kqm:xingqiu:57",
+   "kqm:kaveh:21",
+   "kqm:kazuha:41",
+   "char:10000031:skill:0",
+   "char:10000065:talent_weekly",
+   "kqm:fischl:35",
+   "kqm:xingqiu:44",
+   "char:10000031:skill:1",
+   "char:10000065:passive:0",
+   "kqm:fischl:44",
+   "char:10000031:skill:2",
+   "char:10000065:const:0"
+  ],
+  "retrieved_names": [
+   "Fischl",
+   "Shinobu",
+   "Kuki Shinobu",
+   "Fischl Guide: Sovereign of the Immernachtreich",
+   "Candace Guide: Heterochromatic Guardian",
+   "Neuvillette Guide: Judgment of the Tides",
+   "Xingqiu Guide: A Moment of Solitude",
+   "Kaveh Guide | Empyrean Reflection",
+   "Kazuha Guide: Scarlet Leaves Pursue Wild Waves"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "char:10000065:skill:1",
+   "char:10000032:skill:1",
+   "char:10000032:passive:2"
+  ],
+  "expected_answer_facts": [
+   "Kuki: skill hits cores consistently + healing; Fischl targeting less reliable"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q22",
+  "category": "comparative_reasoning",
+  "question": "Which is better for Alhaitham, 4-piece Gilded Dreams or 4-piece Deepwood Memories?",
+  "reference_answer": "Gilded = personal dmg; Deepwood = team Dendro RES shred; if teammate has Deepwood, Gilded preferred",
+  "retrieved_chunk_ids": [
+   "char:10000078:overview",
+   "kqm:alhaitham:0",
+   "g8:artifact:Gilded Dreams",
+   "g8:artifact:Husk of Opulent Dreams",
+   "g8:weapon:A Thousand Floating Dreams",
+   "kqm:nahida:9",
+   "g8:artifact:Nymph's Dream",
+   "g8:artifact:Deepwood Memories",
+   "kqm:kirara:14",
+   "kqm:tighnari:9",
+   "kqm:lisa-2:8",
+   "kqm:raiden:27",
+   "kqm:thoma:15",
+   "char:10000078:skill:0",
+   "weapon:14511",
+   "kqm:nahida:3",
+   "char:10000078:skill:1",
+   "weapon:full:14511"
+  ],
+  "retrieved_names": [
+   "Alhaitham",
+   "Alhaitham Guide",
+   "Gilded Dreams",
+   "Husk of Opulent Dreams",
+   "A Thousand Floating Dreams",
+   "Nahida Guide: For All Knowledge, A Dream",
+   "Nymph's Dream",
+   "Deepwood Memories",
+   "Kirara Guide: Twin-Tailed Transport",
+   "Tighnari: Verdant Strider",
+   "Lisa Guide: Page 2",
+   "Raiden Guide: Eternal Transience",
+   "Thoma Guide: Crimson Armor of Loyalty"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "g8:artifact:Gilded Dreams",
+   "g8:artifact:Deepwood Memories",
+   "kqm:alhaitham:0"
+  ],
+  "expected_answer_facts": [
+   "Gilded = personal dmg; Deepwood = team Dendro RES shred; if teammate has Deepwood, Gilded preferred"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q23",
+  "category": "comparative_reasoning",
+  "question": "Should I use an Elemental Mastery or ATK% Sands on Aggravate Keqing?",
+  "reference_answer": "Both viable; ATK% often competitive; EM more valuable in Aggravate; depends on full build",
+  "retrieved_chunk_ids": [
+   "char:10000042:overview",
+   "weapon:full:13511",
+   "kqm:keqing:10",
+   "g8:build:Sayu:artifacts",
+   "g8:build:Sayu C0:artifacts",
+   "g8:build:Sayu C6:artifacts",
+   "g8:build:Sayu Exploration Rank:artifacts",
+   "char:10000097:skill:1",
+   "char:10000042:skill:0",
+   "g8:weapon:Staff of the Scarlet Sands",
+   "kqm:keqing:13",
+   "g8:build:Sethos:artifacts",
+   "char:10000042:skill:1",
+   "weapon:13511",
+   "kqm:keqing:12",
+   "char:10000042:skill:2",
+   "char:10000042:passive:0",
+   "char:10000042:passive:1"
+  ],
+  "retrieved_names": [
+   "Keqing",
+   "Staff of the Scarlet Sands",
+   "Keqing Guide | Endless Starlight",
+   "Sayu",
+   "Sayu C0",
+   "Sayu C6",
+   "Sayu Exploration Rank",
+   "Sethos"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "kqm:keqing:10",
+   "kn:general_building:1"
+  ],
+  "expected_answer_facts": [
+   "Both viable; ATK% often competitive; EM more valuable in Aggravate; depends on full build"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q24",
+  "category": "comparative_reasoning",
+  "question": "Is 4-piece Emblem of Severed Fate better than 2-piece Hydro DMG + 2-piece ATK for Yelan?",
+  "reference_answer": "4pc Emblem generally strong: Burst dmg scales with ER + rotation comfort",
+  "retrieved_chunk_ids": [
+   "char:10000060:overview",
+   "g8:artifact:Emblem of Severed Fate",
+   "g8:build:Traveler (Hydro):artifacts",
+   "g8:build:Traveler (Hydro) C0:artifacts",
+   "g8:build:Traveler (Hydro) C6:artifacts",
+   "g8:build:Traveler (Hydro) Exploration Rank:artifacts",
+   "weapon:full:224005",
+   "g8:build:Yelan C0:artifacts",
+   "g8:build:Yelan C6:artifacts",
+   "g8:build:Yelan Exploration Rank:artifacts",
+   "kqm:yelan:10",
+   "g8:build:Raiden:artifacts",
+   "g8:build:Raiden C0:artifacts",
+   "g8:build:Raiden C6:artifacts",
+   "char:10000060:skill:0",
+   "g8:char:Traveler (Hydro)",
+   "kqm:yelan:6",
+   "char:10000060:skill:1"
+  ],
+  "retrieved_names": [
+   "Yelan",
+   "Emblem of Severed Fate",
+   "Traveler (Hydro)",
+   "Traveler (Hydro) C0",
+   "Traveler (Hydro) C6",
+   "Traveler (Hydro) Exploration Rank",
+   "Frag Crystal - Hydro",
+   "Yelan C0",
+   "Yelan C6",
+   "Yelan Exploration Rank",
+   "Yelan Guide: Things Are About to Get Dicey",
+   "Raiden",
+   "Raiden C0",
+   "Raiden C6"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "g8:artifact:Emblem of Severed Fate",
+   "g8:build:Yelan:artifacts",
+   "g8:build:Yelan C0:artifacts",
+   "g8:build:Yelan C6:artifacts"
+  ],
+  "expected_answer_facts": [
+   "4pc Emblem generally strong: Burst dmg scales with ER + rotation comfort"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q25",
+  "category": "comparative_reasoning",
+  "question": "Which is better for a DPS character, a 20% ATK bonus or a 15% Elemental DMG Bonus?",
+  "reference_answer": "No universal answer; depends on scaling/multipliers/team — needs calc",
+  "retrieved_chunk_ids": [
+   "g8:build:Skirk:artifacts",
+   "g8:build:Skirk C0:artifacts",
+   "g8:build:Skirk C6:artifacts",
+   "g8:build:Skirk Exploration Rank:artifacts",
+   "g8:artifact:Thundering Fury",
+   "g8:artifact:Blizzard Strayer",
+   "artifact:15005",
+   "kqm:yunjin:15"
+  ],
+  "retrieved_names": [
+   "Skirk",
+   "Skirk C0",
+   "Skirk C6",
+   "Skirk Exploration Rank",
+   "Thundering Fury",
+   "Blizzard Strayer",
+   "15005",
+   "Yun Jin Guide: The Stage Lucida"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "kn:general_building:1"
+  ],
+  "expected_answer_facts": [
+   "No universal answer; depends on scaling/multipliers/team — needs calc"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q26",
+  "category": "comparative_reasoning",
+  "question": "Why might a character with a lower CRIT ratio deal more damage than one with a higher CRIT ratio?",
+  "reference_answer": "Total dmg depends on base stats, scaling, dmg bonus, reactions, talents, RES, buffs, uptime",
+  "retrieved_chunk_ids": [
+   "kqm:razor:30",
+   "kqm:rosaria:4",
+   "kqm:keqing:18",
+   "kqm:diluc:19",
+   "kqm:eula:10",
+   "kqm:kaveh:3",
+   "g8:build:Ayato:artifacts",
+   "kqm:razor:29"
+  ],
+  "retrieved_names": [
+   "Razor Guide: The Legend of Wolvendom",
+   "Rosaria Guide: Thorny Benevolence",
+   "Keqing Guide | Endless Starlight",
+   "Diluc Guide: The Dark Side of Dawn",
+   "Eula Guide: Noblesse Oblige",
+   "Kaveh Guide | Empyrean Reflection",
+   "Ayato"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "kn:general_building:1"
+  ],
+  "expected_answer_facts": [
+   "Total dmg depends on base stats, scaling, dmg bonus, reactions, talents, RES, buffs, uptime"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q27",
+  "category": "comparative_reasoning",
+  "question": "Should I prioritize CRIT Rate or CRIT DMG when optimizing a DPS build?",
+  "reference_answer": "Both matter; balanced ~1:2 ratio; optimum depends on character/buffs",
+  "retrieved_chunk_ids": [
+   "g8:build:Aloy:artifacts",
+   "g8:build:Aloy C0:artifacts",
+   "g8:build:Aloy Exploration Rank:artifacts",
+   "g8:build:Traveler (Anemo):artifacts",
+   "g8:build:Xiao:artifacts",
+   "g8:build:Traveler (Anemo) C0:artifacts",
+   "g8:build:Traveler (Anemo) C6:artifacts",
+   "g8:build:Xiao C0:artifacts"
+  ],
+  "retrieved_names": [
+   "Aloy",
+   "Aloy C0",
+   "Aloy Exploration Rank",
+   "Traveler (Anemo)",
+   "Xiao",
+   "Traveler (Anemo) C0",
+   "Traveler (Anemo) C6",
+   "Xiao C0"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "kn:general_building:1"
+  ],
+  "expected_answer_facts": [
+   "Both matter; balanced ~1:2 ratio; optimum depends on character/buffs"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q28",
+  "category": "comparative_reasoning",
+  "question": "Is a 5-star weapon always better than a 4-star weapon for a character?",
+  "reference_answer": "No: 4-star passives/stats can synergize better; depends on role/team/refinement",
+  "retrieved_chunk_ids": [
+   "g8:weapon:Polar Star",
+   "kqm:ningguang:2",
+   "weapon:full:380001",
+   "kqm:anemo-traveler:13",
+   "weapon:full:15431",
+   "kqm:thoma:20",
+   "kqm:tartaglia:15",
+   "kqm:yoimiya:12",
+   "kqm:razor:25",
+   "kqm:faruzan:15",
+   "weapon:15507",
+   "kqm:ningguang:9",
+   "weapon:380001",
+   "kqm:anemo-traveler:10"
+  ],
+  "retrieved_names": [
+   "Polar Star",
+   "Ningguang Guide: Eclipsing Star",
+   "Phantasmal Gift: Star Omen",
+   "Anemo Traveler Guide: Vortex Stellaris",
+   "Chain Breaker",
+   "Thoma Guide: Crimson Armor of Loyalty",
+   "Tartaglia Guide: Master of Weaponry",
+   "Yoimiya Guide: Frolicking Flames",
+   "Razor Guide: The Legend of Wolvendom",
+   "Faruzan Guide: Enigmatic Machinist"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "kn:general_building:1",
+   "kqm:ningguang:2"
+  ],
+  "expected_answer_facts": [
+   "No: 4-star passives/stats can synergize better; depends on role/team/refinement"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q29",
+  "category": "comparative_reasoning",
+  "question": "Why can a character's best Artifact set change depending on the team?",
+  "reference_answer": "Set value depends on role, dmg distribution, reactions, team buffs, overlap with teammates",
+  "retrieved_chunk_ids": [
+   "kqm:furina:1",
+   "g8:build:Skirk:artifacts",
+   "g8:build:Skirk C0:artifacts",
+   "g8:build:Skirk C6:artifacts",
+   "g8:build:Skirk Exploration Rank:artifacts",
+   "kqm:yunjin:1",
+   "kqm:klee:10",
+   "kqm:wanderer:9"
+  ],
+  "retrieved_names": [
+   "Furina Guide: Solitary Soliloquy",
+   "Skirk",
+   "Skirk C0",
+   "Skirk C6",
+   "Skirk Exploration Rank",
+   "Yun Jin Guide: The Stage Lucida",
+   "Klee Guide: Fleeing Sunlight",
+   "Wanderer Guide: Eye of the Storm"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "kn:general_building:1",
+   "kqm:furina:1"
+  ],
+  "expected_answer_facts": [
+   "Set value depends on role, dmg distribution, reactions, team buffs, overlap with teammates"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q30",
+  "category": "comparative_reasoning",
+  "question": "How should I decide whether to replace a character's current Artifact with a new one?",
+  "reference_answer": "Compare stats/sets/total dmg contribution, not single CRIT substats; consider ER/EM/team needs",
+  "retrieved_chunk_ids": [
+   "weapon:11437",
+   "kqm:resources-new:0",
+   "kn:general_building:0",
+   "weapon:11427",
+   "char:10000096:const:5",
+   "beta:char:10000147:skill:1",
+   "g8:build:Skirk:artifacts",
+   "g8:build:Skirk C0:artifacts",
+   "g8:build:Skirk C6:artifacts",
+   "weapon:full:11437"
+  ],
+  "retrieved_names": [
+   "New Bough",
+   "Resources New",
+   "General Building Knowledge",
+   "The Dockhand's Assistant",
+   "Arlecchino",
+   "Danica",
+   "Skirk",
+   "Skirk C0",
+   "Skirk C6"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "kn:general_building:0"
+  ],
+  "expected_answer_facts": [
+   "Compare stats/sets/total dmg contribution, not single CRIT substats; consider ER/EM/team needs"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q31",
+  "category": "multi_hop",
+  "question": "I want to build a Hu Tao, Xingqiu, Yelan, and Zhongli team. Which Artifact sets and stats should I prioritize for each character?",
+  "reference_answer": "Hu Tao: CWoF/Shim + HP/EM sands, Pyro goblet, CRIT circlet; XQ: Emblem+ER; Yelan: Emblem+HP/Hydro/CRIT; Zhongli: Tenacity/HP",
+  "retrieved_chunk_ids": [
+   "char:10000030:overview",
+   "char:10000060:overview",
+   "char:10000025:overview",
+   "kqm:hu-tao:21",
+   "g8:build:Hu Tao:artifacts",
+   "g8:build:Hu Tao C0:artifacts",
+   "g8:build:Hu Tao C6:artifacts",
+   "g8:build:Hu Tao Exploration Rank:artifacts",
+   "kqm:xingqiu:52",
+   "g8:build:Xingqiu C0:artifacts",
+   "g8:build:Xingqiu C6:artifacts",
+   "g8:build:Xingqiu Exploration Rank:artifacts",
+   "g8:build:Yelan C0:artifacts",
+   "g8:build:Yelan C6:artifacts",
+   "g8:build:Yelan Exploration Rank:artifacts",
+   "kqm:yelan:26",
+   "g8:build:Zhongli C0:artifacts",
+   "g8:build:Zhongli C6:artifacts"
+  ],
+  "retrieved_names": [
+   "Zhongli",
+   "Yelan",
+   "Xingqiu",
+   "Hu Tao Guide: Butterfly's Embrace",
+   "Hu Tao",
+   "Hu Tao C0",
+   "Hu Tao C6",
+   "Hu Tao Exploration Rank",
+   "Xingqiu Guide: A Moment of Solitude",
+   "Xingqiu C0",
+   "Xingqiu C6",
+   "Xingqiu Exploration Rank",
+   "Yelan C0",
+   "Yelan C6",
+   "Yelan Exploration Rank",
+   "Yelan Guide: Things Are About to Get Dicey",
+   "Zhongli C0",
+   "Zhongli C6"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "g8:build:Hu Tao:artifacts",
+   "g8:build:Xingqiu:artifacts",
+   "g8:build:Yelan:artifacts",
+   "g8:build:Zhongli:artifacts",
+   "g8:artifact:Emblem of Severed Fate"
+  ],
+  "expected_answer_facts": [
+   "Hu Tao: CWoF/Shim + HP/EM sands, Pyro goblet, CRIT circlet; XQ: Emblem+ER; Yelan: Emblem+HP/Hydro/CRIT; Zhongli: Tenacity/HP"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q32",
+  "category": "multi_hop",
+  "question": "I have Raiden Shogun, Xiangling, Xingqiu, and Bennett. Explain how their roles, reactions, and Artifact sets work together.",
+  "reference_answer": "Raiden National: XL+XQ off-field Vaporize; Raiden energy+damage; Bennett heal+ATK; Emblem for Raiden/XL/XQ; Noblesse Bennett",
+  "retrieved_chunk_ids": [
+   "char:10000032:overview",
+   "char:10000025:overview",
+   "char:10000023:overview",
+   "g8:char:Raiden",
+   "kqm:raiden:34",
+   "char:10000052:const:0",
+   "kqm:xiangling:13",
+   "kqm:xingqiu:44",
+   "kqm:bennett:2",
+   "kqm:chongyun:24",
+   "kqm:yae:35",
+   "char:10000032:skill:0",
+   "char:10000025:skill:0",
+   "char:10000023:skill:0",
+   "kqm:raiden:33",
+   "char:10000052:passive:2",
+   "kqm:xiangling:14",
+   "kqm:xingqiu:57"
+  ],
+  "retrieved_names": [
+   "Bennett",
+   "Xingqiu",
+   "Xiangling",
+   "Raiden",
+   "Raiden Guide: Eternal Transience",
+   "Raiden Shogun",
+   "Xiangling Guide: Cooking with Fire",
+   "Xingqiu Guide: A Moment of Solitude",
+   "Bennett Guide: Trial by Fire",
+   "Chongyun Guide: Swordfall",
+   "Yae Miko Guide: The Secret Spells of Lady Kitsune"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "kqm:raiden:34",
+   "kqm:xiangling:13",
+   "kqm:xingqiu:44",
+   "kqm:bennett:2"
+  ],
+  "expected_answer_facts": [
+   "Raiden National: XL+XQ off-field Vaporize; Raiden energy+damage; Bennett heal+ATK; Emblem for Raiden/XL/XQ; Noblesse Bennett"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q33",
+  "category": "multi_hop",
+  "question": "I want to build a Hyperbloom team with Nahida, Xingqiu, and Kuki Shinobu. What should the fourth character do, and how should I build the first three?",
+  "reference_answer": "4th: Hydro/Dendro application, buffs, CC or defense; Nahida Dendro+EM; XQ ER+off-field; Kuki EM+level",
+  "retrieved_chunk_ids": [
+   "g8:char:Shinobu",
+   "char:10000025:overview",
+   "char:10000073:overview",
+   "kqm:nahida:25",
+   "kqm:xingqiu:57",
+   "char:10000065:talent_weekly",
+   "g8:weapon:The First Great Magic",
+   "kqm:baizhu:26",
+   "kqm:candace:31",
+   "kqm:fischl:45",
+   "kqm:kaveh:21",
+   "kqm:neuvillette:45",
+   "kqm:ayato:16",
+   "char:10000025:skill:0",
+   "char:10000073:skill:0",
+   "kqm:nahida:35",
+   "kqm:xingqiu:52",
+   "char:10000065:passive:0"
+  ],
+  "retrieved_names": [
+   "Shinobu",
+   "Xingqiu",
+   "Nahida",
+   "Nahida Guide: For All Knowledge, A Dream",
+   "Xingqiu Guide: A Moment of Solitude",
+   "Kuki Shinobu",
+   "The First Great Magic",
+   "Baizhu Guide: Beyond Mortality",
+   "Candace Guide: Heterochromatic Guardian",
+   "Fischl Guide: Sovereign of the Immernachtreich",
+   "Kaveh Guide | Empyrean Reflection",
+   "Neuvillette Guide: Judgment of the Tides",
+   "Ayato Guide: The Boba Lord"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "g8:artifact:Deepwood Memories",
+   "g8:build:Xingqiu:artifacts",
+   "kn:general_building:1"
+  ],
+  "expected_answer_facts": [
+   "4th: Hydro/Dendro application, buffs, CC or defense; Nahida Dendro+EM; XQ ER+off-field; Kuki EM+level"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q34",
+  "category": "multi_hop",
+  "question": "My Neuvillette deals low damage despite having good CRIT stats. What should I check first?",
+  "reference_answer": "Check HP, Hydro DMG, talent level, weapon, team reactions for his passive; ATK build inefficient",
+  "retrieved_chunk_ids": [
+   "char:10000087:overview",
+   "kqm:neuvillette:37",
+   "g8:weapon:The First Great Magic",
+   "kqm:furina:22",
+   "kqm:fischl:26",
+   "char:10000087:skill:0",
+   "kqm:neuvillette:46",
+   "weapon:15512",
+   "char:10000087:skill:1",
+   "kqm:neuvillette:34",
+   "weapon:full:15512",
+   "char:10000087:skill:2",
+   "kqm:neuvillette:14",
+   "char:10000087:passive:0",
+   "kqm:neuvillette:21",
+   "char:10000087:passive:1",
+   "kqm:neuvillette:17",
+   "kqm:neuvillette:6"
+  ],
+  "retrieved_names": [
+   "Neuvillette",
+   "Neuvillette Guide: Judgment of the Tides",
+   "The First Great Magic",
+   "Furina Guide: Solitary Soliloquy",
+   "Fischl Guide: Sovereign of the Immernachtreich"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "char:10000087:stats",
+   "kqm:neuvillette:37",
+   "char:10000087:passive:1"
+  ],
+  "expected_answer_facts": [
+   "Check HP, Hydro DMG, talent level, weapon, team reactions for his passive; ATK build inefficient"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q35",
+  "category": "multi_hop",
+  "question": "I am building an Aggravate team with Keqing, Fischl, Nahida, and Kazuha. Explain the synergy and recommend the main Artifact sets.",
+  "reference_answer": "Nahida Dendro app; Keqing+Fischl Electro; Kazuha CC+EM buff+VV shred; Keqing Thundering Fury; Fischl Golden Troupe; Nahida Deepwood; Kazuha VV",
+  "retrieved_chunk_ids": [
+   "g8:char:Kazuha",
+   "char:10000073:overview",
+   "char:10000031:overview",
+   "char:10000042:overview",
+   "kn:general_building:1",
+   "kqm:keqing:15",
+   "kqm:fischl:25",
+   "g8:build:Fischl C0:artifacts",
+   "g8:build:Fischl C6:artifacts",
+   "g8:build:Fischl Exploration Rank:artifacts",
+   "kqm:nahida:18",
+   "kqm:kazuha:39",
+   "g8:build:Kazuha C0:artifacts",
+   "g8:build:Kazuha C6:artifacts",
+   "g8:build:Sethos:artifacts",
+   "g8:build:Sethos C0:artifacts",
+   "g8:build:Sethos C6:artifacts",
+   "g8:build:Sethos Exploration Rank:artifacts"
+  ],
+  "retrieved_names": [
+   "Kazuha",
+   "Nahida",
+   "Fischl",
+   "Keqing",
+   "General Building Knowledge",
+   "Keqing Guide | Endless Starlight",
+   "Fischl Guide: Sovereign of the Immernachtreich",
+   "Fischl C0",
+   "Fischl C6",
+   "Fischl Exploration Rank",
+   "Nahida Guide: For All Knowledge, A Dream",
+   "Kazuha Guide: Scarlet Leaves Pursue Wild Waves",
+   "Kazuha C0",
+   "Kazuha C6",
+   "Sethos",
+   "Sethos C0",
+   "Sethos C6",
+   "Sethos Exploration Rank"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "g8:artifact:Viridescent Venerer",
+   "g8:build:Fischl:artifacts",
+   "kn:general_building:1"
+  ],
+  "expected_answer_facts": [
+   "Nahida Dendro app; Keqing+Fischl Electro; Kazuha CC+EM buff+VV shred; Keqing Thundering Fury; Fischl Golden Troupe; Nahida Deepwood; Kazuha VV"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q36",
+  "category": "unanswerable_adversarial",
+  "question": "What is the exact DPS increase of Hu Tao when using Staff of Homa instead of Dragon's Bane at R1?",
+  "reference_answer": "Cannot determine exactly — needs full build/team/enemy/rotation; requires damage calc",
+  "retrieved_chunk_ids": [
+   "kqm:hu-tao:2",
+   "g8:char:Hu Tao",
+   "g8:weapon:Staff of Homa",
+   "g8:weapon:Staff of the Scarlet Sands",
+   "weapon:full:13434",
+   "weapon:full:13401",
+   "weapon:full:14302",
+   "kqm:rosaria:12",
+   "kqm:hu-tao:11",
+   "weapon:full:13501",
+   "weapon:full:13511",
+   "weapon:13401",
+   "g8:weapon:Thrilling Tales of Dragon Slayers",
+   "kqm:rosaria:22",
+   "kqm:hu-tao:15",
+   "weapon:13501",
+   "weapon:14302",
+   "kqm:hu-tao:17"
+  ],
+  "retrieved_names": [
+   "Hu Tao Guide: Butterfly's Embrace",
+   "Hu Tao",
+   "Staff of Homa",
+   "Staff of the Scarlet Sands",
+   "Sacrificer's Staff",
+   "Dragon's Bane",
+   "Thrilling Tales of Dragon Slayers",
+   "Rosaria Guide: Thorny Benevolence"
+  ],
+  "answerable": false,
+  "expected_chunk_ids": [
+   "weapon:full:13501",
+   "weapon:full:13434"
+  ],
+  "expected_answer_facts": [],
+  "expected_refusal_reason": "requires_damage_calculation"
+ },
+ {
+  "id": "q37",
+  "category": "unanswerable_adversarial",
+  "question": "What is the best Artifact set for a character that does not exist in your knowledge base?",
+  "reference_answer": "Should say it lacks info about this character; ask for name/kit or updated database — MUST NOT hallucinate",
+  "retrieved_chunk_ids": [
+   "kqm:nahida:37",
+   "kqm:kqm-bot:0",
+   "kn:general_building:0",
+   "g8:build:Skirk:artifacts",
+   "g8:build:Skirk C0:artifacts",
+   "g8:build:Skirk C6:artifacts",
+   "g8:build:Skirk Exploration Rank:artifacts",
+   "g8:artifact:Nymph's Dream",
+   "kqm:nahida:2",
+   "kqm:nahida:24",
+   "kqm:nahida:27"
+  ],
+  "retrieved_names": [
+   "Nahida Guide: For All Knowledge, A Dream",
+   "KQM Knowledge Bot - Kikin",
+   "General Building Knowledge",
+   "Skirk",
+   "Skirk C0",
+   "Skirk C6",
+   "Skirk Exploration Rank",
+   "Nymph's Dream"
+  ],
+  "answerable": false,
+  "expected_chunk_ids": [
+   "kn:general_building:0"
+  ],
+  "expected_answer_facts": [],
+  "expected_refusal_reason": "missing_kb_entity"
+ },
+ {
+  "id": "q38",
+  "category": "unanswerable_adversarial",
+  "question": "Does Hu Tao's Elemental Skill increase her Elemental Mastery?",
+  "reference_answer": "No: converts ATK based on Max HP + Pyro infusion; does not increase EM directly",
+  "retrieved_chunk_ids": [
+   "kqm:hu-tao:3",
+   "char:10000046:passive:1",
+   "kqm:rosaria:22",
+   "kqm:hu-tao:8",
+   "char:10000046:const:5",
+   "kqm:hu-tao:4",
+   "char:10000046:skill:1",
+   "kqm:hu-tao:21",
+   "g8:char:Hu Tao",
+   "kqm:hu-tao:2"
+  ],
+  "retrieved_names": [
+   "Hu Tao Guide: Butterfly's Embrace",
+   "Hu Tao",
+   "Rosaria Guide: Thorny Benevolence"
+  ],
+  "answerable": true,
+  "expected_chunk_ids": [
+   "char:10000046:skill:1"
+  ],
+  "expected_answer_facts": [
+   "No: converts ATK based on Max HP + Pyro infusion; does not increase EM directly"
+  ],
+  "expected_refusal_reason": null
+ },
+ {
+  "id": "q39",
+  "category": "unanswerable_adversarial",
+  "question": "What is the exact damage multiplier of a character's Elemental Burst at Talent Level 13?",
+  "reference_answer": "Depends on the character — needs the name; without it cannot answer",
+  "retrieved_chunk_ids": [
+   "kqm:klee:14",
+   "kn:general_building:1",
+   "kqm:furina:5",
+   "kqm:ganyu:13",
+   "kqm:mona:29",
+   "kqm:mika:2",
+   "kqm:xinyan:3",
+   "weapon:full:12401"
+  ],
+  "retrieved_names": [
+   "Klee Guide: Fleeing Sunlight",
+   "General Building Knowledge",
+   "Furina Guide: Solitary Soliloquy",
+   "Ganyu Guide: Plenilune Gaze",
+   "Mona Guide: The Astrological Handbook to the Enigmatic Astrologer",
+   "Mika Guide: Surveyor of the Knights of Favonius",
+   "Xinyan Guide: Save Rock 'n' Roll",
+   "Favonius Greatsword"
+  ],
+  "answerable": false,
+  "expected_chunk_ids": [],
+  "expected_answer_facts": [],
+  "expected_refusal_reason": "missing_character_name"
+ },
+ {
+  "id": "q40",
+  "category": "unanswerable_adversarial",
+  "question": "Is this Artifact better than my current one?",
+  "reference_answer": "Needs to see both artifacts + character; compare mains/subs/set/requirements",
+  "retrieved_chunk_ids": [
+   "kn:general_building:0",
+   "kqm:yae:14",
+   "char:10000082:passive:0",
+   "g8:artifact:Marechaussee Hunter",
+   "kqm:thoma:32",
+   "kqm:ayato:9",
+   "kqm:razor:29"
+  ],
+  "retrieved_names": [
+   "General Building Knowledge",
+   "Yae Miko Guide: The Secret Spells of Lady Kitsune",
+   "Baizhu",
+   "Marechaussee Hunter",
+   "Thoma Guide: Crimson Armor of Loyalty",
+   "Ayato Guide: The Boba Lord",
+   "Razor Guide: The Legend of Wolvendom"
+  ],
+  "answerable": false,
+  "expected_chunk_ids": [
+   "kn:general_building:0"
+  ],
+  "expected_answer_facts": [],
+  "expected_refusal_reason": "missing_user_data"
+ }
+]

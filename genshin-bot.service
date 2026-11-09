@@ -1,0 +1,17 @@
+[Unit]
+Description=Genshin RAG Telegram bot (nanoka data)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=borzou
+WorkingDirectory=/home/borzou/genshin-bot
+# token + LLM key are injected from the hermes env file at start
+EnvironmentFile=/home/borzou/genshin-bot/bot.env
+ExecStart=/home/borzou/genshin-bot/venv/bin/python /home/borzou/genshin-bot/bot/main.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
