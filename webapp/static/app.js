@@ -48,6 +48,11 @@ const input = $("q");
 const sendBtn = $("sendBtn");
 let busy = false;
 
+// API base: same-origin when served by the VPS (borzou.site/genshin/ or dev),
+// cross-origin to the VPS API when the UI runs on GitHub Pages (static only).
+const SAME_HOST = ["borzou.site", "localhost", "127.0.0.1"].includes(location.hostname);
+const API = SAME_HOST ? "api" : "https://borzou.site/genshin/api";
+
 function applyLang() {
   const d = I18N[lang];
   document.documentElement.lang = lang;
@@ -106,7 +111,7 @@ form.addEventListener("submit", async (e) => {
   bubble("user", q);
   const typing = bubble("bot typing", I18N[lang].thinking);
   try {
-    const res = await fetch("api/ask", {
+    const res = await fetch(`${API}/ask`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ q }),
@@ -147,7 +152,7 @@ $("langBtn").addEventListener("click", () => {
   applyLang();
 });
 
-fetch("api/health").then((r) => r.json()).then((d) => {
+fetch(`${API}/health`).then((r) => r.json()).then((d) => {
   if (d && d.version) $("ver").textContent = "v" + d.version;
 }).catch(() => { $("ver").textContent = "offline"; });
 

@@ -19,6 +19,7 @@ sys.path.insert(0, BOT_DIR)
 import rag  # noqa: E402
 import chitchat  # noqa: E402
 from fastapi import FastAPI, Request  # noqa: E402
+from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
 from fastapi.responses import JSONResponse  # noqa: E402
 from fastapi.staticfiles import StaticFiles  # noqa: E402
 from pydantic import BaseModel  # noqa: E402
@@ -32,6 +33,19 @@ MAX_Q = 300
 _ip_hits: dict[str, list[float]] = {}
 
 app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
+
+# CORS: the same chat UI ships as a static GitHub Pages site, calling this API
+# cross-origin. GET+POST only, no credentials — read/write here is Q&A text.
+_ALLOWED_ORIGINS = [o.strip() for o in os.environ.get(
+    "GENSHIN_WEB_ORIGINS",
+    "https://amirhossein-borzou.github.io,https://borzou.site"
+).split(",") if o.strip()]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=_ALLOWED_ORIGINS,
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type"],
+)
 
 
 class Ask(BaseModel):
