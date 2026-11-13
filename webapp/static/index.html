@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Genshin Impact AI assistant — answers from live game data: characters, skills, constellations, materials, weapons, artifacts and builds.">
+<title>Genshin Impact Assistant</title>
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+<div class="stars" aria-hidden="true"></div>
+<main class="shell">
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">⚔️</span>
+      <div class="titles">
+        <h1 data-i18n="title">Genshin Impact Assistant</h1>
+        <p class="sub" data-i18n="subtitle">Answers from live game data — characters, skills, constellations, materials, weapons &amp; builds.</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <span class="ver" id="ver" title="data version">v…</span>
+      <button id="langBtn" class="ghost-btn" type="button">فارسی</button>
+    </div>
+  </header>
+
+  <section class="chat" id="chat" aria-live="polite"></section>
+
+  <footer class="composer">
+    <div class="suggestions" id="suggestions"></div>
+    <form id="askForm" autocomplete="off">
+      <input id="q" type="text" maxlength="300" data-i18n-ph="placeholder"
+             placeholder="Ask about a character, weapon, artifact…">
+      <button id="sendBtn" type="submit" aria-label="Send">➤</button>
+    </form>
+    <p class="footnote">
+      <span data-i18n="limit">Limit: 15 questions/hour.</span>
+      <span data-i18n="beta">Beta content is datamined and may change.</span>
+      <a href="https://t.me/GIGPT_bot" target="_blank" rel="noopener" data-i18n="tgLink">Also on Telegram → @GIGPT_bot</a>
+    </p>
+  </footer>
+</main>
+<script src="app.js?v=1"></script>
+</body>
+</html>
