@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Genshin Impact AI assistant — answers from live game data: characters, skills, constellations, materials, weapons, artifacts and builds.">
-<title>Genshin Impact Assistant</title>
+<meta name="description" content="GIGPT — your AI Genshin Impact companion. Answers from live game data: characters, skills, constellations, materials, weapons, artifacts and builds. Also on Telegram @GIGPT_bot.">
+<title>GIGPT — Your AI Genshin Companion</title>
 <link rel="canonical" href="https://borzou.site/genshin/">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚔️</text></svg>">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 <div class="stars" aria-hidden="true"></div>
@@ -15,32 +16,71 @@
     <div class="brand">
       <span class="logo">⚔️</span>
       <div class="titles">
-        <h1 data-i18n="title">Genshin Impact Assistant</h1>
-        <p class="sub" data-i18n="subtitle">Answers from live game data — characters, skills, constellations, materials, weapons &amp; builds.</p>
+        <h1 data-i18n="title">GIGPT</h1>
+        <p class="sub" data-i18n="subtitle">Your AI Genshin Companion — answers from live game data: characters, skills, constellations, materials, weapons &amp; builds.</p>
       </div>
     </div>
     <div class="topbar-actions">
       <span class="ver" id="ver" title="data version">v…</span>
-      <button id="langBtn" class="ghost-btn" type="button">فارسی</button>
+      <button id="langBtn" class="ghost-btn" type="button" aria-label="Switch language">فارسی</button>
     </div>
   </header>
+
+  <section class="hero">
+    <h2 class="headline" data-i18n="headline">Your Genshin Journey, Smarter.</h2>
+    <p class="tagline" data-i18n="tagline">Ask anything. Explore builds. Compare teams. Make better decisions in Teyvat.</p>
+  </section>
 
   <section class="chat" id="chat" aria-live="polite"></section>
 
   <footer class="composer">
-    <div class="suggestions" id="suggestions"></div>
+    <div class="suggestions" id="suggestions" role="group" data-i18n-aria="suggestionsGroup"></div>
     <form id="askForm" autocomplete="off">
-      <input id="q" type="text" maxlength="300" data-i18n-ph="placeholder"
-             placeholder="Ask about a character, weapon, artifact…">
-      <button id="sendBtn" type="submit" aria-label="Send">➤</button>
+      <label class="sr-only" for="q" data-i18n="inputLabel">Ask a Genshin question</label>
+      <textarea id="q" rows="1" maxlength="300" data-i18n-ph="placeholder"
+             placeholder="Ask about characters, builds, teams, weapons, or game mechanics..."
+             aria-describedby="limitNote"></textarea>
+      <button id="sendBtn" type="submit" data-i18n-aria="send" aria-label="Send">➤</button>
     </form>
-    <p class="footnote">
+    <p class="footnote" id="limitNote">
       <span data-i18n="limit">Limit: 15 questions/hour.</span>
-      <span data-i18n="beta">Beta content is datamined and may change.</span>
-      <a href="https://t.me/GIGPT_bot" target="_blank" rel="noopener" data-i18n="tgLink">Also on Telegram → @GIGPT_bot</a>
+      <span data-i18n="beta">Some beta information is datamined and may change before release.</span>
+      <a href="https://t.me/GIGPT_bot" target="_blank" rel="noopener" data-i18n="tgLink">Also available on Telegram → @GIGPT_bot</a>
     </p>
   </footer>
+
+  <section class="features" aria-labelledby="featuresH">
+    <h2 class="visually-hidden" id="featuresH" data-i18n="featuresH">What GIGPT does</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="f-ico" aria-hidden="true">📚</div>
+        <h3 data-i18n="f1h">Game Knowledge</h3>
+        <p data-i18n="f1p">Explore characters, weapons, artifacts, skills, and game mechanics.</p>
+      </div>
+      <div class="feature">
+        <div class="f-ico" aria-hidden="true">🔎</div>
+        <h3 data-i18n="f2h">Source-backed Answers</h3>
+        <p data-i18n="f2p">Get answers supported by game data — every answer shows the sources it used.</p>
+      </div>
+      <div class="feature">
+        <div class="f-ico" aria-hidden="true">⚔️</div>
+        <h3 data-i18n="f3h">Team &amp; Build Analysis</h3>
+        <p data-i18n="f3p">Compare builds, weapons, and team options to make informed choices.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sample" aria-labelledby="sampleH">
+    <h2 id="sampleH" data-i18n="sampleH">Sample answer</h2>
+    <p class="sample-q" data-i18n="sampleQ">“I don’t have Kazuha. What alternatives can I use?”</p>
+    <div class="sample-a">
+      <p data-i18n="sampleA1">No — Kazuha isn't easily replaceable 1:1, but here's who covers his role: Sucrose is the closest free option (same Anemo grouping via her Skill, plus the shared Elemental Mastery buff), while Venti excels against lighter enemies that can be pulled. For a Kazuha-style EM buff, as a 4-star option, still run Sucrose with the Viridescent Venerer set.</p>
+      <p data-i18n="sampleA2">If you're after damage instead, Anemo Traveler works as a budget substitute.</p>
+      <span class="srcs">📚 <span data-i18n="sources">Sources</span>: Kazuha, Ganyu, Sucrose, Viridescent Venerer • v7.2</span>
+    </div>
+    <p class="sample-note" data-i18n="sampleNote">Example of a real GIGPT answer — shortened. Ask your own question above.</p>
+  </section>
 </main>
-<script src="app.js?v=2"></script>
+<script src="app.js?v=3"></script>
 </body>
 </html>
