@@ -38,7 +38,7 @@ app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
 # cross-origin. GET+POST only, no credentials — read/write here is Q&A text.
 _ALLOWED_ORIGINS = [o.strip() for o in os.environ.get(
     "GENSHIN_WEB_ORIGINS",
-    "https://amirhossein-borzou.github.io,https://borzou.site"
+    "https://amirhossein-borzou.github.io,https://gigpt.github.io,https://borzou.site"
 ).split(",") if o.strip()]
 app.add_middleware(
     CORSMiddleware,
