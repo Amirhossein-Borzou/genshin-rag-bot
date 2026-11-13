@@ -146,6 +146,6 @@ async def ask(body: Ask, request: Request):
                             status_code=500)
 
 
-# static chat UI (files sit next to app.py in webapp/)
-_static = os.path.join(HERE, "static")
-app.mount("/", StaticFiles(directory=_static, html=True), name="ui")
+# static chat UI — source of truth is ../docs/ (also served by GitHub Pages)
+_docs = os.path.join(HERE, "..", "docs")
+app.mount("/", StaticFiles(directory=_docs, html=True), name="ui")
