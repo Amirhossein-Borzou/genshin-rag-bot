@@ -84,9 +84,9 @@ GLOSSARY = {
     "سیتلا لی": "Citlali", "اینه فا": "Ineffa", "ایفا": "Ifa",
     "داک": "Durin", "ورکا": "Varka", "کلمبین": "Columbina",
 
-    # 2026-11-14: new-beta + roster gaps (web user hit out_of_scope on ساریتسا/میتیا)
-    "تزاریتسا": "Tsaritsa",
-    "ساریتسا": "Tsaritsa",
+    # 2026-11-14: new-beta + roster gaps (web user hit out_of_scope on ساریتسا/میتیا; ساریتسا=Anastasya per 7.3 lore)
+    "تزاریتسا": "Anastasya Tsaritsa",
+    "ساریتسا": "Anastasya Tsaritsa",
     "میتیا": "Mitya",
     "متیا": "Mitya",
     "دانیکا": "Danica",
@@ -150,6 +150,10 @@ GLOSSARY = {
     "کوجو سارا": "Kujou Sara",
     "سارا": "Sara",
     "داهلیا": "Dahlia",
+    "آناستاسیا": "Anastasya",
+    "آناستازیا": "Anastasya",
+    "اناستازیا": "Anastasya",
+    "انااستاسیا": "Anastasya",
 }
 
 PERSIAN_DIGITS = str.maketrans("۰۱۲۳۴۵۶۷۸۹٠١٢٣٤٥٦٧٨٩", "01234567890123456789")
